@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/css/bootstrap.css"/>
+<body>
+<div class="container mb-5">
+    <form method="post" action="/upCar" enctype="multipart/form-data" class="container shadow-lg ">
+        <div class="row justify-content-center ">
+            <input type="text" class="row w-50 mt-3 p-2 rounded-1 shadow-lg"  name="ten" placeholder="Ten">
+        </div>
+        <div class="row justify-content-center">
+            <input type="text" class="row w-50 mt-3 p-2 rounded-1 shadow-lg" name="gia" placeholder="Gia">
+        </div>
+        <div class="row justify-content-center ">
+            <input type="file" class="row mb-2 w-50 mt-3 p-2 rounded-1 shadow-lg justify-content-center" name="anh" multiple>
+        </div>
+        <div class="row justify-content-center ">
+            <button type="submit" class="btn btn-success w-25 mb-5"> add mongo</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

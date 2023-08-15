@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/css/bootstrap.css">
+      <title> <%= title%></title>
+  </head>
+  <body>
+    <div>
+      <h1>List cart</h1>
+      <a href="/add" methods="get">  add </a>
+        <% Data.forEach(function (item){ %>
+        <div class="row border-3 p-3 mb-5 border-black">
+            <p>id: <%= item._id %> </p>
+            <p>name: <%= item.name %> </p>
+            <p>gia: <%= item.gia %> </p>
+            <p>LinkAnh: </p>
+            <% item.linkAnh.forEach(function (link) { %>
+                <img src="<%= link %>" alt="Image">
+            <% }) %>
+            <p> <a href="/update"> update</a> <a href="/delete">delete</a></p>
+        </div>
+
+     <%  })%>
+    </div>
+
+  </body>
+</html>
